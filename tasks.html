@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="actors">MOVIE ACTORS AND ACTRESSES</h2>
+    <p id="actor1">Scarlett Johanssen</p>
+    <p id="actor2">Milla Jovovich</p>
+    <p id="actor3">Dwayne Johnson</p>
+    <button type="button" ondblclick="change()">Display Actors</button>
+
+    <h2 id="showheading"></h2>
+    <p id="show1"></p>
+    <p id="show2"></p>
+    <p id="show3"></p>
+
+    <!-- method1 -->
+
+    <!-- <script>
+        function change() {
+            var head = document.getElementById("actors");
+            var act1 = document.getElementById("actor1");
+            var act2 = document.getElementById("actor2");
+            var act3 = document.getElementById("actor3");
+
+            document.getElementById('showheading').innerHTML = head.innerHTML;
+            document.getElementById('show1').innerHTML = act1.innerHTML;
+            document.getElementById('show2').innerHTML = act2.innerHTML;
+            document.getElementById('show3').innerHTML = act3.innerHTML;
+
+            console.log(head.innerHTML)
+            console.log(act1.innerHTML)
+            console.log(act2.innerHTML)
+            console.log(act3.innerHTML)
+
+        }
+    </script> -->
+
+    <!-- method2 -->
+    <script>
+        function change() {
+            var head = document.getElementById("actors").innerHTML;
+            var act1 = document.getElementById("actor1").innerHTML;
+            var act2 = document.getElementById("actor2").innerHTML;
+            var act3 = document.getElementById("actor3").innerHTML;
+
+            document.getElementById('showheading').innerHTML = head;
+            document.getElementById('show1').innerHTML = act1;
+            document.getElementById('show2').innerHTML = act2;
+            document.getElementById('show3').innerHTML = act3;
+
+            console.log(head)
+            console.log(act1)
+            console.log(act2)
+            console.log(act3)
+
+        }
+    </script>
+</body>
+
+</html>

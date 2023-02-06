@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head></head>
+
+<body>
+    <p id="demo" style="cursor: pointer;" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">I am
+        your default content!</p>
+    <p id="seconddemo"></p>
+
+    <p id="demo1">Chelsea</p>
+    <p id="demo2">Barcelona</p>
+    <p id="demo3">Dortmund</p>
+    <button onclick="swapClubs()">CLICK HERE!</button>
+
+
+    <p id="pelement">Hey guys, Where are you?</p>
+    <h3 id="headelement">QUESTION</h3>
+    <button onclick="change()">Click me!</button>
+
+    <script>
+        var x = "Volvo" + 16 + 4;
+        document.getElementById("seconddemo").innerHTML = x;
+
+        function swapClubs() {   //declaring a function
+            var x = document.getElementById("demo1");
+            var y = document.getElementById("demo2");
+            var z = document.getElementById("demo3");
+
+            x.innerHTML = "Liverpool";   //writing into an html element
+            y.innerHTML = "Real Madrid";  //writing into an html element
+            z.innerHTML = "Bayern Munich";  //writing into an html element
+        }
+
+        function change() {   //declaring a function
+            var w = document.getElementById("pelement");
+            var e = document.getElementById("headelement");
+
+            w.innerHTML = "We are in class learning JavaScript.";  //writing into an html element
+            e.innerHTML = "ANSWER!";   //writing into an html element
+            e.style.color = "red";  //writing into an html element
+            w.style.fontSize = "50px"   //writing into an html element
+        }
+    </script>
+</body>
+
+</html>

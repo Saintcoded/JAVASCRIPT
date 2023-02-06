@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CHANGING HTML CONTENT</h1>
+    <p id="demo"></p>
+    <p id="pelement">Hey guys, Where are you?</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click me,
+        Sir!</button>
+    <button onclick="change()">CLICK ME PLS!</button>
+    <script>
+        function change() {
+            var w = document.getElementById("pelement");
+            w.innerHTML = "We are in class learning JavaScript";
+        }
+        function myFunction() {
+            document.getElementById("p_demo").style.fontSize = "25px";
+            document.getElementById("p_demo").style.color = "red";
+            document.getElementById("p_demo").style.backgroundColor = "yellow";
+        }
+    </script>
+    <hr>
+    <h1>CHANGING STYLE OF HTML ELEMENT</h1>
+    <p id="p_demo">JavaScript can change the style of an HTML element</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <hr>
+    <h1>CHANGING HTML ATTRIBUTES</h1>
+    <p>JavaScript changes the value of the src (source) attribute of an image</p>
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "pic_bulboff.gif"
+            } else {
+                pic = "pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body onload="printing()">
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+</body>
+
+<script>
+    function printing() {
+        var x = "John";
+        var y = new String("john");
+
+        document.getElementById("demo2").innerHTML = typeof x
+        document.getElementById("demo3").innerHTML = typeof y
+    }
+</script>
+
+</html>
